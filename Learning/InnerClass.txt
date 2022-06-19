@@ -11,7 +11,7 @@ public class PermEmployee extends Employee{
 		System.out.println("New Salary = "+((hike/salary)*100)+salary);
 	}
 	public void display() {	
-		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"\nHike percentage = "+hike+"%");
 	}
 	}
 
@@ -23,7 +23,7 @@ public class TempEmployee extends Employee{
 		System.out.println("New Salary = "+((hike/salary)*100)+salary);
 	}
 	public void display() {	
-		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"\nHike percentage = "+hike+"%");
 	}
 	}
 void role() {
@@ -34,7 +34,7 @@ class ContractEmployee extends Employee{
 		System.out.println("New Salary = "+((hike/salary)*100)+salary);
 	}
 	public void display() {	
-		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"\nHike percentage = "+hike+"%");
 	}
 }
 ContractEmployee cE=new ContractEmployee();
