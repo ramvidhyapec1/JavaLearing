@@ -1,0 +1,56 @@
+package innerClass;
+
+public class Employee {
+
+int salary=50000;
+public class PermEmployee extends Employee{
+	String code="PE05";
+	Integer hike=45;
+	
+	public void new_salary() {
+		System.out.println("New Salary = "+((hike/salary)*100)+salary);
+	}
+	public void display() {	
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+	}
+	}
+
+public class TempEmployee extends Employee{
+	
+	String code="TE01";
+	int hike=30;
+			public void new_salary() {
+		System.out.println("New Salary = "+((hike/salary)*100)+salary);
+	}
+	public void display() {	
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+	}
+	}
+void role() {
+class ContractEmployee extends Employee{
+	String code="CE01";
+	int hike=30;
+			public void new_salary() {
+		System.out.println("New Salary = "+((hike/salary)*100)+salary);
+	}
+	public void display() {	
+		System.out.println("Current Salary = " +salary+"\ncode = "+code+"/nHike percentage = "+hike+"%");
+	}
+}
+ContractEmployee cE=new ContractEmployee();
+cE.new_salary();
+cE.display();
+}
+public static void main(String[] args) {
+    Employee e=new Employee();
+    Employee.PermEmployee pE=e.new PermEmployee();
+    Employee.TempEmployee tE=e.new TempEmployee();
+    pE.new_salary();
+    pE.display();
+    System.out.println("**************************************");
+    tE.new_salary();
+    tE.display();
+    System.out.println("***************************************");
+    e.role();
+}
+}
